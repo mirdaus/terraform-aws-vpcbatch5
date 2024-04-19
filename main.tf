@@ -13,7 +13,7 @@ resource "aws_subnet" "main" {
   cidr_block = var.subnet1_cider
 
   tags = {
-    Name = "subnet1"
+    Name = var.subnet1_name
   }
 }
 
@@ -24,7 +24,7 @@ resource "aws_subnet" "main2" {
   cidr_block = var.subnet2_cider
 
   tags = {
-    Name = "subnet2"
+    Name = var.subnet2_name
   }
 }
 
@@ -35,7 +35,7 @@ resource "aws_subnet" "main3" {
   availability_zone =  "${var.region}c"
 
   tags = {
-    Name = "subnet3"
+    Name = var.subnet3_name
   }
 }
 
